@@ -1,0 +1,42 @@
+tool:
+  users:
+    user:
+      btt:
+        priohelper: true    # see formula-specific description
+        license: |
+          <?xml version="1.0" encoding="UTF-8"?>
+          <!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+          <plist version="1.0">
+          <dict>
+            <key>Product</key>
+            <string>BetterTouchTool</string>
+            <key>Name</key>
+            <string>user</string>
+            <key>Email</key>
+            <string>user@example.com</string>
+            <key>OrderID</key>
+            <string>d8e8fca2dc0f896fd7cb4cb0031ba249</string>
+            <key>LicenseType</key>
+            <string>paddle_lifetime</string>
+            <key>Licenses</key>
+            <string>1</string>
+            <key>Timestamp</key>
+            <string>1234567890</string>
+            <key>CheckoutName</key>
+            <string>Us Er</string>
+            <key>TransactionID</key>
+            <string>123456789-123456789abcdef-abcdef0123</string>
+            <key>Signature</key>
+            <data>c0ff3ebab3=
+          </data>
+          </dict>
+          </plist>
+  btt:
+    users:
+      user:                             # user configuration can also be specified in tool:btt:users
+        persistenv: '.bash_profile'
+        btt:
+          priohelper: false
+    defaults:                           # default formula configuration for all users
+      priohelper: true                  # if one user has it as true, this always installs the helper system-wide and therefore overrides other user's settings
+                                        # this is what BTT does by default if it's installed system-wide, did not want to fiddle around with it for the moment
