@@ -1,0 +1,21 @@
+# -*- coding: utf-8 -*-
+# vim: ft=yaml
+#
+# Set default values.
+---
+values:
+  lookup:
+    pkg:
+      manager: brew
+      name: homebrew/cask/bettertouchtool
+    paths:
+      confdir: 'Library/Preferences'
+      conffile: 'com.hegenberg.BetterTouchTool.plist'
+      datadir: 'Library/Application Support/BetterTouchTool'
+    rootgroup: {{ salt['cmd.run']("stat -f '%Sg' /dev/console") }}
+    service:
+      name: com.hegenberg.BetterTouchProcessPrioWatcher
+  # Just here for testing
+  added_in_defaults: defaults_value
+  winner: defaults
+...
