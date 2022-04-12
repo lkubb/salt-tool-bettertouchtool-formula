@@ -9,6 +9,7 @@
 include:
   - {{ sls_config_clean }}
 
+
 BetterTouchTool is removed:
   pkg.removed:
     - name: {{ btt.lookup.pkg.name }}
