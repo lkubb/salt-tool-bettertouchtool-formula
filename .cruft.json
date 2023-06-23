@@ -1,6 +1,6 @@
 {
   "template": "https://github.com/lkubb/salt-tool-template-formula",
-  "commit": "8eb784d74343e8fe8ef8a6c66dc50e5f0456981f",
+  "commit": "f1ab9a16336e03bba219bdd4be3989c7bed23003",
   "checkout": null,
   "context": {
     "cookiecutter": {
@@ -37,9 +37,9 @@
       "has_completions": "n",
       "has_tests": "n",
       "git_username": "lkubb",
-      "_lookup": {},
-      "_settings": {},
-      "_usersettings": {
+      "lookup": {},
+      "settings": {},
+      "usersettings": {
         "license": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!DOCTYPE plist PUBLIC \"-//Apple Computer//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">\n<plist version=\"1.0\">\n<dict>\n  <key>Product</key>\n  <string>BetterTouchTool</string>\n  <key>Name</key>\n  <string>user</string>\n  <key>Email</key>\n  <string>user@example.com</string>\n  <key>OrderID</key>\n  <string>d8e8fca2dc0f896fd7cb4cb0031ba249</string>\n  <key>LicenseType</key>\n  <string>paddle_lifetime</string>\n  <key>Licenses</key>\n  <string>1</string>\n  <key>Timestamp</key>\n  <string>1234567890</string>\n  <key>CheckoutName</key>\n  <string>Us Er</string>\n  <key>TransactionID</key>\n  <string>123456789-123456789abcdef-abcdef0123</string>\n  <key>Signature</key>\n  <data>c0ff3ebab3=\n</data>\n</dict>\n</plist>",
         "priohelper": true
       },
