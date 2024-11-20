@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 # vim: ft=yaml
 #
 # Set default values.
@@ -15,7 +14,4 @@ values:
     rootgroup: {{ salt['cmd.run']("stat -f '%Sg' /dev/console") }}
     service:
       name: com.hegenberg.BetterTouchProcessPrioWatcher
-  # Just here for testing
-  added_in_defaults: defaults_value
-  winner: defaults
 ...

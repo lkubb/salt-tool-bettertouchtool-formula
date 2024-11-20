@@ -1,7 +1,6 @@
-# -*- coding: utf-8 -*-
 # vim: ft=sls
 
-{%- set tplroot = tpldir.split('/')[0] %}
+{%- set tplroot = tpldir.split("/")[0] %}
 {%- set sls_package_install = tplroot ~ ".package.install" %}
 {%- from tplroot ~ "/map.jinja" import mapdata as btt with context %}
 
@@ -9,7 +8,7 @@ include:
   - {{ sls_package_install }}
 
 
-{%- if btt.users | selectattr('btt.priohelper', 'defined') | selectattr('btt.priohelper') | list %}
+{%- if btt.users | selectattr("btt.priohelper", "defined") | selectattr("btt.priohelper") | list %}
 
 BetterTouchTool Priority Helper service is installed:
   file.managed:

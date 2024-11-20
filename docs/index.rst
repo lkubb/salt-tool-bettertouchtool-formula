@@ -1,5 +1,5 @@
-Welcome to salt-tool-btt-formula's documentation!
-=================================================
+Welcome to tool-btt-formula's documentation!
+============================================
 
 .. toctree::
    :maxdepth: 2
